@@ -1,0 +1,229 @@
+//@font-face {
+//  font-family: 'icomoon';
+//  src:  url('../../fonts/icomoon.eot?v8fp09');
+//  src: url('../../fonts/icomoon.svg?v8fp09#icomoon') format('svg'),
+//  url('../../fonts/icomoon.eot?v8fp09#iefix') format('embedded-opentype'),
+//  url('../../fonts/icomoon.ttf?v8fp09') format('truetype'),
+//  url('../../fonts/icomoon.woff?v8fp09') format('woff');
+//
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//[class^="icon-"], [class*=" icon-"] {
+//  /* use !important to prevent issues with browser extensions that change fonts */
+//  font-family: 'icomoon' !important;
+//  speak: none;
+//  font-style: normal;
+//  font-weight: normal;
+//  font-variant: normal;
+//  text-transform: none;
+//  line-height: 1;
+//
+//  /* Better Font Rendering =========== */
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+
+@import "mixin";
+
+
+.icon-main{/*我的*/
+  @include icon-image(1.1rem,1.1rem,"../../assets/icons/home.png");
+}
+.icon-items{/*双创项目*/
+  @include icon-image(1.1rem,1.1rem,"../../assets/icons/project.png");
+}
+.icon-user{/*个人中心*/
+  @include icon-image(1.1rem,1.1rem,"../../assets/icons/user.png");
+}
+.router-link-active{
+  .icon-main{/*我的*/
+    @include icon-image(1.1rem,1.1rem,"../../assets/icons/home-c.png");
+  }
+  .icon-items{/*双创项目*/
+    @include icon-image(1.1rem,1.1rem,"../../assets/icons/project-c.png");
+  }
+  .icon-user{/*个人中心*/
+    @include icon-image(1.1rem,1.1rem,"../../assets/icons/user-c.png");
+  }
+}
+
+.icon-star{/*精选项目*/
+  position: relative;
+  top: .25rem;
+  @include icon-image-block(1.4rem,1.4rem,"../../assets/icons/h-choice.png");
+}
+.icon-arrow {
+  position: relative;
+  top: .6rem;
+  @include icon-image(.9rem,1rem,"../../assets/icons/list-right-arrow.png");
+}
+.icon-arrow-active {
+  position: relative;
+  top: .6rem;
+  @include icon-image(.9rem,1rem,"../../assets/icons/right-arrow-active.png");
+}
+.icon-mark{
+  position: relative;
+  top: .15rem;
+  @include icon-image-block(.8rem,.8rem,"../../assets/icons/mark.png");
+}
+/********************/
+.icon-bind{/*实名绑卡*/
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 27@2x.png");
+}
+.icon-sign{/*网银签约*/
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 28@2x.png");
+}
+.icon-right{
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 29@2x.png");
+}
+.icon-bank{
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 29@2x.png");
+}
+/**********************/
+.icon-eyes{
+  @include icon-image-block(1rem,1rem,"../../assets/icons/u-display.png");
+}
+.icon-closeeyes{
+  @include icon-image-block(1rem,1rem,"../../assets/icons/u-notshow.png");
+}
+.icon-search{
+  position: relative;
+  top: 0.2rem;
+  right: -0.3rem;
+  @include icon-image-block(1rem,1rem,"../../assets/icons/icon-search.png");
+}
+.icon-tip{/*公告*/
+  @include icon-image-block(.75rem,1rem,"../../assets/icons/h-horn.png");
+}
+
+////@font-face {
+////  font-family: 'icomoon';
+////  src:  url('../../fonts/icomoon.eot?v8fp09');
+////  src: url('../../fonts/icomoon.svg?v8fp09#icomoon') format('svg'),
+////  url('../../fonts/icomoon.eot?v8fp09#iefix') format('embedded-opentype'),
+////  url('../../fonts/icomoon.ttf?v8fp09') format('truetype'),
+////  url('../../fonts/icomoon.woff?v8fp09') format('woff');
+////
+////  font-weight: normal;
+////  font-style: normal;
+////}
+////
+////[class^="icon-"], [class*=" icon-"] {
+////  /* use !important to prevent issues with browser extensions that change fonts */
+////  font-family: 'icomoon' !important;
+////  speak: none;
+////  font-style: normal;
+////  font-weight: normal;
+////  font-variant: normal;
+////  text-transform: none;
+////  line-height: 1;
+////
+////  /* Better Font Rendering =========== */
+////  -webkit-font-smoothing: antialiased;
+////  -moz-osx-font-smoothing: grayscale;
+////}
+//
+//.icon-closeeyes:before {
+//  //content: "\e924";
+//  content: '';
+//
+//}
+//.icon-search:before {
+//  content: "\e925";
+//}
+//.icon-对勾2:before {
+//  content: "\e926";
+//}
+//.icon-tip:before {
+//  content: "\e927";
+//}
+//.icon-close:before {
+//  content: "\e928";
+//}
+//.icon-aboutsc:before {
+//  content: "\e929";
+//  font-size: 1rem;
+//}
+//.icon-items:before {
+//  content: "\e92a";
+//  font-size: 1rem;
+//}
+//.icon-feedback:before {
+//  content: "\e92b";
+//}
+//.icon-arrow:before {
+//  content: "\e92c";
+//}
+//.icon-clear:before {
+//  content: "\e92d";
+//}
+//.icon-big:before {
+//  content: "\e92e";
+//}
+//.icon-listseclect:before {
+//  content: "\e92f";
+//}
+//.icon-setting:before {
+//  content: "\e930";
+//}
+//.icon-main {
+//  //content: "\e931";
+//  //font-size: 1rem;
+//  background: url("../../assets/icons/home.png") no-repeat center;
+//  background-size: 100%;
+//  width:2rem;
+//  height:2rem;
+//}
+////.icon-main:before {
+////  //content: "\e931";
+////  //font-size: 1rem;
+////}
+//.icon-star:before {
+//  content: "\e932";
+//}
+//.icon-双创项目012:before {
+//  content: "\e933";
+//}
+//.icon-双创项目022:before {
+//  content: "\e934";
+//}
+//.icon-mark:before {
+//  content: "\e935";
+//}
+//.icon-idea:before {
+//  content: "\e936";
+//}
+//.icon-user:before {
+//  content: "\e937";
+//  font-size: 1rem;
+//}
+//.icon-我的022:before {
+//  content: "\e938";
+//}
+//.icon-right:before {
+//  content: "\e939";
+//}
+//.icon-bind:before {
+//  content: "\e93a";
+//}
+//.icon-sign:before {
+//  content: "\e93b";
+//}
+//.icon-who:before {
+//  content: "\e93c";
+//}
+//.icon-向下箭头3:before {
+//  content: "\e93d";
+//}
+//.icon-select:before {
+//  content: "\e93e";
+//}
+//.icon-eyes:before {
+//  content: "\e93f";
+//}
+//.icon-found:before {
+//  content: "\e940";
+//}
